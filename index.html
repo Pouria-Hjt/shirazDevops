@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./public/" />
+    <!-- fontawesome -->
+    <script src="./public/assets/js/fontawesome.min.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="./public/assets/css/aos.min.css" />
+  </head>
+  <body class="bg-white relative" dir="rtl">
+    <!-- start preloader -->
+    <div
+      id="preloader"
+      class="w-full h-screen bg-white z-50 fixed top-0 right-0 flex justify-center items-center">
+      <svg
+        class="ip"
+        viewBox="0 0 256 128"
+        width="256px"
+        height="128px"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#5ebd3e" />
+            <stop offset="33%" stop-color="#ffb900" />
+            <stop offset="67%" stop-color="#f78200" />
+            <stop offset="100%" stop-color="#e23838" />
+          </linearGradient>
+          <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
+            <stop offset="0%" stop-color="#e23838" />
+            <stop offset="33%" stop-color="#973999" />
+            <stop offset="67%" stop-color="#009cdf" />
+            <stop offset="100%" stop-color="#5ebd3e" />
+          </linearGradient>
+        </defs>
+        <g fill="none" stroke-linecap="round" stroke-width="16">
+          <g class="ip__track" stroke="#ddd">
+            <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
+            <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
+          </g>
+          <g stroke-dasharray="180 656">
+            <path
+              class="ip__worm1"
+              stroke="url(#grad1)"
+              stroke-dashoffset="0"
+              d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
+            <path
+              class="ip__worm2"
+              stroke="url(#grad2)"
+              stroke-dashoffset="358"
+              d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!-- end preloader -->
+
+    <!-- start navbar -->
+    <nav
+      id="navbar"
+      class="sticky top-0 left-0 bg-primary w-full h-20 transition-all flex justify-between p-page text-white z-40">
+      <div class="w-4/5 flex gap-5 justify-start items-center">
+        <a
+          href="#"
+          onclick="scrollToTop"
+          class="hover:text-secondary transition-all font-bold"
+          >صفحه اصلی</a
+        >
+        <a href="#about" class="hover:text-secondary transition-all font-bold"
+          >نگاهی به همایش</a
+        >
+        <a
+          href="#speakers"
+          class="hover:text-secondary transition-all font-bold"
+          >ارائه دهندگان</a
+        >
+        <a href="#referee" class="hover:text-secondary transition-all font-bold"
+          >داوران پروپزال</a
+        >
+        <a
+          href="#sponsors"
+          class="hover:text-secondary transition-all font-bold"
+          >اسپانسرها</a
+        >
+        <a href="#prices" class="hover:text-secondary transition-all font-bold"
+          >ثبت‌نام</a
+        >
+        <a
+          href="#feedback"
+          class="hover:text-secondary transition-all font-bold"
+          >توصیفات</a
+        >
+        <a href="#team" class="hover:text-secondary transition-all font-bold"
+          >تیم اجرایی</a
+        >
+        <a
+          href="#loacation"
+          class="hover:text-secondary transition-all font-bold"
+          >مکان برگزاری</a
+        >
+      </div>
+      <div class="w-1/5 flex justify-end items-center">
+        <a
+          href="/"
+          class="text-secondary border border-secondary rounded-sm px-5 py-2 hover:bg-secondary hover:text-white transition-all font-bold"
+          >ثبت‌نام کنید</a
+        >
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start header -->
+    <header
+      id="header"
+      class="bg-headerBg bg-fixed bg-cover bg-center bg-no-repeat h-[calc(100vh-5rem)] flex flex-col gap-16 p-page justify-center">
+      <div
+        data-aos="fade-down"
+        class="w-full flex justify-center items-center gap-5 text-2xl text-white font-bold">
+        <div class="flex gap-3 items-center">
+          <i class="fa-regular fa-calendar text-secondary"></i>
+          <span class="drop-shadow-primary">۱۳ ام بهمن ماه</span>
+        </div>
+        <div class="flex gap-3 items-center">
+          <i class="fa-solid fa-location-dot text-secondary"></i>
+          <span class="drop-shadow-primary">ایران ، شیراز</span>
+        </div>
+      </div>
+      <h1
+        data-aos="fade-left"
+        class="text-9xl text-center text-white font-bold drop-shadow-secondary">
+        همایش دوآپس ایران
+      </h1>
+      <h6
+        data-aos="fade-down-left"
+        class="text-xl font-bold drop-shadow-tertiary text-white text-center">
+        در شهر شیراز پایتخت فرهنگی
+        <strong>ایران</strong>
+      </h6>
+      <div class="w-full grid grid-cols-4 justify-items-center">
+        <div
+          data-aos="zoom-out"
+          class="w-full flex flex-col justify-center items-center border-l-2 border-l-white">
+          <span class="text-white text-8xl font-bold drop-shadow-timer" id="day"
+            >1</span
+          >
+          <span class="text-white text-2xl font-bold drop-shadow-timer"
+            >روز</span
+          >
+        </div>
+        <div
+          data-aos="zoom-out"
+          class="w-full flex flex-col justify-center items-center border-l-2 border-l-white">
+          <span
+            class="text-white text-8xl font-bold drop-shadow-timer"
+            id="hour"
+            >1</span
+          >
+          <span class="text-white text-2xl font-bold drop-shadow-timer"
+            >ساعت</span
+          >
+        </div>
+        <div
+          data-aos="zoom-out"
+          class="w-full flex flex-col justify-center items-center border-l-2 border-l-white">
+          <span
+            class="text-white text-8xl font-bold drop-shadow-timer"
+            id="minute"
+            >1</span
+          >
+          <span class="text-white text-2xl font-bold drop-shadow-timer"
+            >دقیقه</span
+          >
+        </div>
+        <div
+          data-aos="zoom-out"
+          class="flex flex-col justify-center items-center">
+          <span
+            class="text-white text-8xl font-bold drop-shadow-timer"
+            id="second"
+            >1</span
+          >
+          <span class="text-white text-2xl font-bold drop-shadow-timer"
+            >ثانیه</span
+          >
+        </div>
+      </div>
+      <div
+        data-aos="fade-up"
+        class="w-full flex items-center justify-center gap-5">
+        <a
+          href="#prices"
+          class="text-white bg-secondary px-7 py-3 rounded-[4px] font-bold"
+          >ثبت‌نام</a
+        >
+        <a
+          href="#about"
+          class="text-white border border-white px-7 py-3 rounded-[4px] font-bold hover:bg-white hover:text-secondary transition-all duration-200"
+          >نگاهی به همایش</a
+        >
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start about section -->
+    <section id="about" class="w-full py-16 flex items-center flex-col p-page">
+      <h2 class="font-normal text-5xl text-primary">همایش بزرگ دوآپس ایران</h2>
+      <h6 class="text-[#8d93a0] font-normal mt-5">
+        به بررسی بهترین روش‌ها و ابزارهای
+        <span class="text-secondary">DevOps</span> برای ارتقا فرایندهای توسعه و
+        اتومیشن می‌پردازیم.
+      </h6>
+      <div class="w-full mt-10 border-b borderb-[#e9e9e9] flex justify-between">
+        <span
+          id="tab1"
+          class="tabs active flex gap-2 justify-center items-center text-black hover:text-secondary transition-all text-xl font-bold py-5 relative cursor-pointer">
+          <i class="fa-solid fa-code"></i>
+          درباره همایش
+        </span>
+        <span
+          id="tab2"
+          class="tabs flex gap-2 justify-center items-center text-black hover:text-secondary transition-all text-xl font-bold py-5 relative cursor-pointer">
+          <i class="fa-solid fa-rocket"></i>
+          سخنرانی ها
+        </span>
+        <span
+          id="tab3"
+          class="tabs flex gap-2 justify-center items-center text-black hover:text-secondary transition-all text-xl font-bold py-5 relative cursor-pointer">
+          <i class="fa-solid fa-rocket"></i>
+          کارگاه های تخصصی
+        </span>
+      </div>
+      <div class="w-full mt-10 flex justify-between">
+        <div
+          class="w-full tab-content hidden transition-all grid-cols-5 gap-x-16 active">
+          <img
+            src="./public/images/poster-r.png"
+            class="col-span-2 aspect-square"
+            alt="" />
+          <div
+            class="text-[#51545B] col-span-3 flex flex-col gap-3 text-justify leading-7">
+            <h3 class="text-primary font-bold text-xl">
+              همایش بزرگ دوآپس ایران
+            </h3>
+            <p>
+              همایش بزرگ دوآپس ایران با هدف ارتقا سطح فنی و دانش علاقه‌مندان به
+              این حوزه در تاریخ ۱۳ ام بهمن‌ ماه ۱۴۰۲ در شهر شیراز،
+              <span class="text-secondary">پایتخت فرهنگی ایران</span> به صورت
+              حضوری برگزار خواهد شد.
+            </p>
+            <p>
+              این همایش به منظور جمع‌آوری بهترین‌های حوزه DevOps و ارائه آخرین
+              دانش‌ها و تجربیات در این زمینه برگزار می‌شود، در این همایش که برای
+              اولین بار در ایران برگزار می شود، بر آن هستیم تا با به اشتراک
+              گذاری دانش و تجربه به ارتقا سطح فنی یکدیگر کمک کنیم و معتقد هستیم
+              با همکاری یکدیگر میتوانیم کنار هم رشد کنیم و آینده بهتری برای خود
+              درست کنیم.
+            </p>
+            <p>
+              در این همایش، بهترین اساتید و متخصصان دوآپس از سراسر کشور برای
+              سخنرانی و ارائه دعوت شده‌اند تا به اشتراک گذاشتن دانش، تجربیات و
+              روش‌های موفق خود در حوزه DevOps بپردازند.
+            </p>
+            <p>
+              این همایش فرصتی مناسب برای دسترسی به آخرین دانش‌ها و ابزارها و
+              همچنین برقراری ارتباط با برترین افراد حوزه DevOps می‌باشد.
+            </p>
+            <p>
+              رشد ما باعث رشد جامعه و افزایش کیفیت زندگی خواهد شد و بر این باور
+              هستیم که با ایجاد بستری برای حضور همه میتوانیم دانش را به طور
+              برابر و عادلانه با همه به اشتراک بگذاریم و فرصت های برابری برای
+              رشد همه ایجاد کنیم
+            </p>
+            <ul>
+              <li>
+                بیش از <span class="text-secondary font-bold">۱۲ سخنرانی</span>
+              </li>
+              <li>
+                بیش از
+                <span class="text-secondary font-bold">۶ کارگاه تخصصی</span>
+              </li>
+              <li>
+                شبکه سازی تخصصی
+                <span class="text-secondary font-bold">با طعم قهوه</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="w-full tab-content hidden transition-all grid-cols-5 gap-x-16">
+          <div
+            class="text-[#51545B] col-span-3 flex flex-col gap-3 text-justify leading-7">
+            <h3 class="text-primary font-bold text-xl">
+              نگاهی به سخنرانی‌های همایش
+            </h3>
+            <p>
+              همایش DevOps ایران به عنوان یکی از مهم‌ترین رویدادهای فناوری
+              اطلاعات و مهندسی نرم‌افزار در کشور، به بررسی جدیدترین تکنولوژی‌ها،
+              روش‌ها و ابزارهای DevOps می‌پردازد.
+            </p>
+            <p>
+              در این همایش، سخنرانان برجسته و متخصصان حوزه DevOps از سراسر کشور
+              و جهان به اشتراک تجربیات و دانش خود پرداخته و مخاطبان را با
+              چالش‌ها و فرصت‌های جدید این حوزه آشنا می‌کنند.
+            </p>
+            <p>
+              با تمرکز بر روی موضوعاتی همچون اتوماسیون، CI/CD، مدیریت
+              زیرساخت‌ها، امنیت و مانیتورینگ، این همایش فرصتی مناسب برای تبادل
+              نظر و شناخت بهتر مفاهیم DevOps است.
+            </p>
+            <p>منتظر حضور شما در این همایش دوآپسی بزرگ هستیم.</p>
+
+            <ul>
+              <li>
+                <span class="text-secondary font-bold"
+                  >مدت زمان هر سخنرانی:</span
+                >
+                ۳۰ الی ۴۵ دقیقه
+              </li>
+              <li>
+                <span class="text-secondary font-bold">محل برگزاری : </span>
+                سالن آمفی تئاتر
+              </li>
+              <li>
+                <span class="text-secondary font-bold">ظرفیت : </span>۵۰۰ نفر
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./public/images/poster-2.png"
+            class="col-span-2 aspect-square"
+            alt="" />
+        </div>
+        <div
+          class="w-full tab-content hidden transition-all grid-cols-5 gap-x-16">
+          <img
+            src="./public/images/poster-r.png"
+            class="col-span-2 aspect-square"
+            alt="" />
+          <div
+            class="text-[#51545B] col-span-3 flex flex-col gap-3 text-justify leading-7">
+            <h3 class="text-primary font-bold text-xl">کارگاه‌های تخصصی</h3>
+            <p>
+              ارائه‌های کارگاه‌های تخصصی نیز به عنوان بخشی مهم از این همایش،
+              فرصتی مناسب برای یادگیری عمیق‌تر و عملی‌تر برگزار می‌شوند.
+            </p>
+            <p>
+              این کارگاه‌ها برای شرکت‌کنندگان فرصتی فراهم می‌کنند تا به صورت
+              عملی با مفاهیم پیچیده‌تر DevOps آشنا شده و مهارت‌های لازم برای
+              اجرای موفق فرآیندهای DevOps را به دست آورند.
+            </p>
+            <p>
+              هر ارائه کارگاه تخصصی معمولاً به مدت حدود ۱ ساعت و نیم برگزار
+              می‌شود و شرکت‌کنندگان می‌توانند در این مدت زمان، به صورت عملی با
+              ابزارها، تکنولوژی‌ها و روش‌های جدید DevOps آشنا شوند.
+            </p>
+            <p>
+              علاوه بر این، کارگاه‌های تخصصی همایش DevOps ایران فرصت مناسبی برای
+              ایجاد ارتباطات حرفه‌ای و شبکه‌سازی با افراد دیگر فعال در حوزه
+              DevOps فراهم می‌آورند.
+            </p>
+            <p>
+              شرکت‌کنندگان می‌توانند از تجربیات و دانش اساتید و متخصصان بهره‌مند
+              شده و روابط حرفه‌ای جدید برقرار کنند.
+            </p>
+            <ul>
+              <li>
+                <span class="text-secondary font-bold">مدت زمان هر ارائه:</span>
+                ۵۰ الی ۹۰ دقیقه
+              </li>
+              <li>
+                <span class="text-secondary font-bold">محل برگزاری : </span>
+                کلاس های دانشگاه
+              </li>
+              <li>
+                <span class="text-secondary font-bold">ظرفیت : </span>۵۱ نفر
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- start numeric section -->
+    <section
+      class="w-full h-fit min-h-[400px] p-page grid grid-cols-4 justify-items-center py-20 bg-counterBg bg-center bg-cover bg-fixed bg-no-repeat relative before:absolute before:w-full before:h-full before:top-0 before:right-0 before:opacity-70 z-10 before:-z-10 before:bg-primary"
+      id="counterSection">
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <span
+          id="speakers"
+          data-target-number="12"
+          class="text-8xl text-secondary font-bold"
+          >0</span
+        >
+        <span class="text-quinary font-bold">سخنرانان</span>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <span
+          id="providers"
+          data-target-number="4"
+          class="text-8xl text-secondary font-bold"
+          >0</span
+        >
+        <span class="text-quinary font-bold">ارائه دهنده‌گان کارگاه </span>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <span
+          id="workshopCapacity"
+          data-target-number="200"
+          class="text-8xl text-secondary font-bold"
+          >0</span
+        >
+        <span class="text-quinary font-bold">ظرفیت هر کارگاه تخصصی </span>
+      </div>
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <span
+          id="conferenceCapacity"
+          data-target-number="500"
+          class="text-8xl text-secondary font-bold"
+          >0</span
+        >
+        <span class="text-quinary font-bold">ظرفیت شرکت کننده </span>
+      </div>
+    </section>
+    <!-- end numeric section -->
+
+    <!-- start speakers section -->
+    <section
+      class="w-full mt-10 flex flex-col gap-5 justify-center items-center">
+      <div class="w-full flex flex-col gap-5 justify-center items-center pb-5">
+        <h2 class="text-primary font-bold text-3xl">ارائه دهندگان</h2>
+        <span class="text-quinary text-base">
+          <span class="text-secondary">بهترین های دوآپس ایران</span> رو در این
+          همایش دورهم جمع کردیم تا با بهترین کیفیت همایش رو برگزار کنیم.
+        </span>
+      </div>
+      <div
+        class="w-full py-4 grid grid-cols-4 gap-10 bg-speakersBg bg-20 p-page bg-primary bg-opacity-85 bg-blend-color-dodge">
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارایه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/abdini.jpg"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">محمد عابدینی</h5>
+          <span class="text-primary text-base"
+            >علاقه‌مند به دنیای نرم‌افزار آزاد
+          </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">راهبری همایش</h6>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/saeid.jpg"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">سعید بستان‌دوست</h5>
+          <span class="text-primary text-base">موسس - Kubedemy.io </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه:</h6>
+            <span class="text-primary text-lg" dir="auto">
+              سفر امن در اتمسفر کانتینرها
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/hamed.jpg"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">حامد فروردین</h5>
+          <span class="text-primary text-base">مدیر توسعه - Irancell Lab </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >1- Platform strategy
+            </span>
+            <span class="text-primary text-lg" dir="auto"
+              >2- Devops anti-patterns
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            کارگاه تخصصی
+          </div>
+          <img
+            src="./public/images/speakers/mehrdad.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">مهرداد فرخ‌منش</h5>
+          <span class="text-primary text-base"> توسعه دهنده - فریلنسر </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع کارگاه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >DevContainers - The future of development environments
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/alisalmaji.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">علی سلماجی</h5>
+          <span class="text-primary text-base">بنیانگذار NeorPro </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto">
+              15000 Minecraft players Vs One k8s cluster, WebRTC challenges
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            کارگاه تخصصی
+          </div>
+          <img
+            src="./public/images/speakers/aref.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">سید عارف حسینی‌کیا</h5>
+          <span class="text-primary text-base">مدیر فنی - ARCaptcha </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع کارگاه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >How can Argo help us to find Golden Fleece ?
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/rezachalak.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">رضا چالاک</h5>
+          <span class="text-primary text-base">
+            مهندس دوآپس - Notion Wave
+          </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto">
+              Kubernetes - in air-gapped environments
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            کارگاه تخصصی
+          </div>
+          <img
+            src="./public/images/speakers/nimaheidari.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">نیما حیدری‌نسب</h5>
+          <span class="text-primary text-base">مدیر فنی - کوئرا </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع کارگاه :</h6>
+            <span class="text-primary text-lg" dir="auto">
+              GitLap CI/CD for Beginners
+            </span>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/msadeghi.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">محمد امین صادقی</h5>
+          <span class="text-primary text-base"
+            >مدیر امنیت گروه مالی کاریزما و مشاور ارشد امنیت سنباد
+          </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto">
+              DevSecOps - Shift Left Approach
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/mkarimi.png"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">ملک‌محمد کرمی‌نژاد</h5>
+          <span class="text-primary text-base"> مهندس کلود - Oracle </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >1- How to deploy by Terragrunt in Multi Environment
+            </span>
+            <span class="text-primary text-lg" dir="auto"
+              >2- GitOps Workflow
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/mohsen.jpg"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">محسن کربلائی امینی</h5>
+          <span class="text-primary text-base">کارشناس DevOps در NeorPro </span>
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >A Review on AlaaS stack and its challenges
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end speakers section -->
+
+    <script src="./public/assets/js/jquery.min.js"></script>
+    <script src="./public/assets/js/parallax.min.js"></script>
+    <script src="./public/assets/js/aos.min.js"></script>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
