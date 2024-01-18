@@ -10,11 +10,15 @@ export default {
         quaternary: "rgb(255, 138, 4)",
         quinary: "#8d93a0",
         greenPrimary: "rgb(6, 167, 6)",
+        silver: "#C0C0C0",
+        bronze: "#CD7F32",
       },
       backgroundImage: {
         headerBg: "url(/images/headerBg.jpg)",
         counterBg: "url(/images/bg-shiraz3.jpg)",
         speakersBg: "url(/images/devopslogo.png)",
+        shirazBg: "url(/images/bg-shiraz1.jpg)",
+        location: "url(/images/shirazuni.jpg)",
       },
       dropShadow: {
         primary: "3px 3px 2px rgb(5, 5, 24)",

@@ -111,3 +111,11 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(counterSection);
+
+const hamMenu = document.getElementById("hamMenu");
+const aside = document.getElementById("aside");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  aside.classList.toggle("active");
+});

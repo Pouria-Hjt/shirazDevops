@@ -28,6 +28,9 @@
   .tab-content.active {
     @apply grid;
   }
+  #aside.active {
+    @apply w-10/12;
+  }
 }
 @layer components {
   .triangle-up::after {
@@ -116,5 +119,58 @@
   }
   to {
     stroke-dashoffset: -358;
+  }
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fe4918;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+@keyframes rotate {
+  0% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(0deg);
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+  100% {
+    width: 64px;
+    height: 64px;
+    transform: rotate(360deg);
   }
 }
