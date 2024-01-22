@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./public/" />
+    <title>همایش بزرگ دوآپس ایران</title>
+    <link rel="canonical" href="https://devops.shirazcloud.ir/">
+    <meta property="og:url" content="https://devops.shirazcloud.ir/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="همایش بزرگ دوآپس ایران با هدف ارتقا سطح فنی و دانش علاقه مندان به حوزه دوآپس در تاریخ جمعه ۱۳ ام بهمن ماه ۱۴۰۲ در پایتخت فرهنگی ایران، شیراز، برگزار خواهد شد.">
+    <meta name="description" content="همایش بزرگ دوآپس ایران با هدف ارتقا سطح فنی و دانش علاقه مندان به حوزه دوآپس در تاریخ جمعه ۱۳ ام بهمن ماه ۱۴۰۲ در پایتخت فرهنگی ایران، شیراز، برگزار خواهد شد.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="همایش بزرگ دوآپس ایران">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "همایش بزرگ دوآپس ایران",
+        "url": "https://devops.shirazcloud.ir"
+      }
+    </script>
+    <link rel="stylesheet" href="./" />
     <!-- fontawesome -->
     <script src="./public/assets/js/fontawesome.min.js"></script>
     <!-- AOS -->
@@ -63,57 +78,52 @@
     <nav
       id="navbar"
       class="sticky md:hidden top-0 left-0 bg-primary w-full h-20 transition-all flex justify-between p-page text-white z-40">
-      <div class="w-4/5 lg:w-full flex gap-5 justify-start items-center">
-        <a
-          href="#"
-          onclick="scrollToTop"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
-          >صفحه اصلی</a
-        >
+      <div
+        class="w-4/5 lg:w-full flex gap-5 xl:gap-2 justify-start items-center">
         <a
           href="#about"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >نگاهی به همایش</a
         >
         <a
           href="#speakers"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >ارائه دهندگان</a
         >
         <a
           href="#referee"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >داوران پروپزال</a
         >
         <a
           href="#sponsors"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >اسپانسرها</a
         >
         <a
           href="#prices"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >ثبت‌نام</a
         >
         <a
-          href="#feedback"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
-          >توصیفات</a
+          href="#hotel"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
+          >هتل ها</a
         >
         <a
           href="#team"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >تیم اجرایی</a
         >
         <a
           href="#loacation"
-          class="hover:text-secondary transition-all font-bold lg:text-sm"
+          class="hover:text-secondary transition-all font-bold xl:text-xs"
           >مکان برگزاری</a
         >
       </div>
       <div class="w-1/5 flex justify-end items-center">
         <a
-          href="/"
+          href="#prices"
           class="text-secondary border border-secondary rounded-sm px-5 py-2 hover:bg-secondary hover:text-white transition-all font-bold"
           >ثبت‌نام کنید</a
         >
@@ -141,49 +151,43 @@
       id="aside"
       class="w-0 fixed hidden top-0 left-0 h-dvh overflow-hidden bg-white z-40 transition-all duration-700 lg:flex flex-col gap-5 pt-20">
       <a
-        href="#"
-        onclick="scrollToTop"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
-        >صفحه اصلی</a
-      >
-      <a
         href="#about"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >نگاهی به همایش</a
       >
       <a
         href="#speakers"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >ارائه دهندگان</a
       >
       <a
         href="#referee"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >داوران پروپزال</a
       >
       <a
         href="#sponsors"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >اسپانسرها</a
       >
       <a
         href="#prices"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >ثبت‌نام</a
       >
       <a
-        href="#feedback"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
-        >توصیفات</a
+        href="#hotel"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
+        >هتل ها</a
       >
       <a
         href="#team"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >تیم اجرایی</a
       >
       <a
         href="#loacation"
-        class="hover:text-secondary transition-all font-bold lg:text-sm border-b-2 px-5 border-b-secondary pb-2"
+        class="hover:text-secondary transition-all font-bold xl:text-xs border-b-2 px-5 border-b-secondary pb-2"
         >مکان برگزاری</a
       >
       <div class="w-full flex justify-center items-center">
@@ -539,10 +543,10 @@
         class="w-full py-4 grid grid-cols-4 lg:grid-cols-2 md:!grid-cols-1 gap-10 bg-speakersBg bg-20 p-page bg-primary bg-opacity-85 bg-blend-color-dodge">
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
-            ارایه عمومی
+            مجری
           </div>
           <img
             src="./public/images/speakers/abdini.jpg"
@@ -558,7 +562,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -578,7 +582,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -601,7 +605,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             کارگاه تخصصی
@@ -621,7 +625,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -641,7 +645,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             کارگاه تخصصی
@@ -661,7 +665,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -683,7 +687,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             کارگاه تخصصی
@@ -704,7 +708,7 @@
 
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -726,7 +730,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -749,7 +753,7 @@
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             ارائه عمومی
@@ -764,6 +768,28 @@
             <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
             <span class="text-primary text-lg" dir="auto"
               >A Review on AlaaS stack and its challenges
+            </span>
+          </div>
+        </div>
+        <div
+          data-aos="fade-up"
+          class="w-full h-full flex flex-col gap-3 p-5 bg-white items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
+          <div
+            class="absolute -top-20 -left-20 size-40 bg-secondary -rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
+            ارائه عمومی
+          </div>
+          <img
+            src="./public/images/speakers/soroush.jpg"
+            class="w-1/2 aspect-square rounded-full border-2 border-green-500"
+            alt="" />
+          <h5 class="text-secondary text-2xl font-bold">سروش کاویانی</h5>
+          <span class="text-primary text-base"
+            >مدیر تحقیق و توسعه لیموهاست</span
+          >
+          <div class="w-full flex flex-col gap-4">
+            <h6 class="text-greenPrimary font-bold text-xl">موضوع ارائه :</h6>
+            <span class="text-primary text-lg" dir="auto"
+              >Introduction to Helm (Kubernetes Package Manager)
             </span>
           </div>
         </div>
@@ -789,7 +815,9 @@
       <a href="#prices" class="text-blue-700 hover:underline">
         زمان ارسال پروپزال به پایان رسید، برای حضور در همایش ثبت نام کنید.
       </a>
-      <div class="w-full flex justify-center items-center flex-col gap-3 mt-5">
+      <div
+        id="referee"
+        class="w-full flex justify-center items-center flex-col gap-3 mt-5">
         <h2 class="text-primary font-bold text-3xl md:text-xl text-center">
           داوران انتخاب پروپزال
         </h2>
@@ -849,7 +877,9 @@
     <!-- end confrence section -->
 
     <!-- start sponsors section -->
-    <section class="w-full p-page h-fit flex flex-col gap-5 py-10 items-center">
+    <section
+      id="sponsors"
+      class="w-full p-page h-fit flex flex-col gap-5 py-10 items-center">
       <h2 class="text-primary font-bold text-3xl md:text-xl text-cen">
         حامیان
       </h2>
@@ -862,8 +892,8 @@
           ما منتظر همکاری با شما هستیم تا با هم، یک همایش علمی و فرهنگی بی‌نظیر
           را برگزار کنیم.
         </span>
-        <a href="#" class="text-secondary hover:underline">
-          دریافت پروپزال و ارسال درخواست مذاکره
+        <a href="" class="text-secondary hover:underline formafzar">
+          <script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/az4sc" form-style="dialog" form-link-text="دریافت پروپزال و ارسال درخواست مذاکره" form-theme=""></script>
         </a>
       </div>
       <div
@@ -871,40 +901,50 @@
         <div class="w-full flex justify-center items-center flex-col gap-5">
           <h3 class="text-amber-400 text-3xl font-bold">اسپانسر طلایی</h3>
           <div class="w-full grid grid-cols-2 gap-2">
-            <img
-              src="public/images/sponsors/kubedemy.png"
-              class="w-full border-4 border-amber-400 p-2"
-              alt="" />
-            <img
-              src="public/images/sponsors/limohost.png"
-              class="w-full border-4 border-amber-400 p-2"
-              alt="" />
+            <a href="https://kubedemy.io/" target="_blank"
+              ><img
+                src="public/images/sponsors/kubedemy.png"
+                class="w-full border-4 border-amber-400 p-2"
+                alt=""
+            /></a>
+            <a href="https://limoo.host/" target="_blank"
+              ><img
+                src="public/images/sponsors/limohost.png"
+                class="w-full border-4 border-amber-400 p-2"
+                alt=""
+            /></a>
           </div>
         </div>
         <div class="w-full flex justify-center items-center flex-col gap-5">
           <h3 class="text-silver text-3xl font-bold">اسپانسر نقره ای</h3>
           <div class="w-full grid grid-cols-2 gap-2">
-            <img
-              src="public/images/sponsors/kubedemy.png"
-              class="w-full border-4 border-siltext-silver p-2"
-              alt="" />
-            <img
+            <a href="https://parspack.com/" target="_blank"
+              ><img
+                src="public/images/sponsors/parspack.png"
+                class="w-full border-4 border-siltext-silver p-2"
+                alt=""
+            /></a>
+            <!-- <img
               src="public/images/sponsors/limohost.png"
               class="w-full border-4 border-siltext-silver p-2"
-              alt="" />
+              alt="" /> -->
           </div>
         </div>
         <div class="w-full flex justify-center items-center flex-col gap-5">
           <h3 class="text-bronze text-3xl font-bold">اسپانسر برنزی</h3>
           <div class="w-full grid grid-cols-2 gap-2">
-            <img
-              src="public/images/sponsors/kubedemy.png"
-              class="w-full border-4 border-bronze p-2"
-              alt="" />
-            <img
-              src="public/images/sponsors/limohost.png"
-              class="w-full border-4 border-bronze p-2"
-              alt="" />
+            <a href="https://livito.tv/" target="_blank"
+              ><img
+                src="public/images/sponsors/shirazunilogo.png"
+                class="w-full border-4 border-bronze p-2"
+                alt=""
+            /></a>
+            <a href="https://shirazu.ac.ir/" target="_blank"
+              ><img
+                src="public/images/sponsors/livito.png"
+                class="w-full border-4 border-bronze p-2"
+                alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -912,7 +952,9 @@
     <!-- end sponsors section -->
 
     <!-- start ticket section -->
-    <section class="w-full p-page flex flex-col gap-5 items-center py-10">
+    <section
+      id="prices"
+      class="w-full p-page flex flex-col gap-5 items-center py-10">
       <h2 class="text-primary font-bold text-3xl md:text-xl text-center">
         بلیط ها
       </h2>
@@ -922,16 +964,16 @@
           همایش میشود و
           <span class="text-secondary"> فاقد ارزش افزوده می‌باشد</span>
         </span>
-        <span class="text-quinary">
+        <!-- <span class="text-quinary">
           ما سه مدل بلیط برای شما فراهم کرده‌ایم که بر اساس الویت زمانی قیمت‌ها
           تفاوت دارند.
-        </span>
+        </span> -->
       </div>
       <div
         class="w-full grid grid-cols-3 gap-5 mt-10 md:grid-cols-2 sm:!grid-cols-1">
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-8 px-5 py-10 bg-white justify-around items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-8 px-5 py-10 bg-white justify-around items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-16 -right-16 size-32 bg-secondary rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             حضوری
@@ -940,21 +982,31 @@
           <span
             class="text-primary text-base flex gap-3 items-start justify-center">
             <i class="fa-solid fa-check text-green-400 text-lg"></i>
-            دسترسی به محتوای همایش
+            حضوز آزاد همزمان در کارگاه تخصصی و سالن همایش
           </span>
           <span
             class="text-primary text-base flex gap-3 items-start justify-center">
             <i class="fa-solid fa-check text-green-400 text-lg"></i>
-            انتخاب کارگاه تخصصی
+            گفنگو آزاد و شبکه سازی
+          </span>
+          <span
+            class="text-primary text-base flex gap-3 items-start justify-center">
+            <i class="fa-solid fa-check text-green-400 text-lg"></i>
+            پرسش و پاسخ با ارائه دهنده
+          </span>
+          <span
+            class="text-primary text-base flex gap-3 items-start justify-center">
+            <i class="fa-solid fa-check text-green-400 text-lg"></i>
+            میان وعده و پک هدایا
           </span>
           <button
-            class="w-4/5 py-4 text-xl font-bold bg-secondary text-white rounded-md hover:bg-opacity-80 transition-all">
-            اکنون ثبت‌نام کنید
+            class="w-4/5 py-4 text-xl font-bold bg-secondary text-white rounded-md hover:bg-opacity-80 transition-all formafzar">
+            <script  type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/d05qm" form-style="dialog" form-link-text="اکنون ثبت‌نام کنید " form-theme=""></script>
           </button>
         </div>
         <div
           data-aos="fade-up"
-          class="w-full h-full flex flex-col gap-8 px-5 py-10 bg-white justify-around items-center rounded-lg shadow-2xl relative overflow-hidden">
+          class="w-full h-full flex flex-col gap-8 px-5 py-10 bg-white justify-around items-center rounded-lg shadow-2xl relative overflow-hidden min-h-[410px]">
           <div
             class="absolute -top-16 -right-16 size-32 bg-blue-500 rotate-45 flex items-end justify-center text-white pb-1 font-bold text-lg">
             آنلاین
@@ -977,8 +1029,8 @@
             پرسش و پاسخ با ارائه دهنده
           </span>
           <button
-            class="w-4/5 py-4 text-xl font-bold bg-secondary text-white rounded-md hover:bg-opacity-80 transition-all">
-            اکنون ثبت‌نام کنید
+            class="w-4/5 py-4 text-xl font-bold bg-secondary text-white rounded-md hover:bg-opacity-80 transition-all formafzar">          
+            <script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/lulrj" form-style="dialog" form-link-text="اکنون ثبت‌نام کنید " form-theme=""></script>
           </button>
         </div>
       </div>
@@ -986,14 +1038,17 @@
     <!-- end ticket section -->
 
     <!-- start hotel section -->
-    <section class="w-full p-page flex flex-col gap-5 items-center py-10">
+    <section
+      id="hotel"
+      class="w-full p-page flex flex-col gap-5 items-center py-10">
       <h2 class="text-primary font-bold text-3xl md:text-xl text-center">
         هتل ها
       </h2>
       <div class="flex flex-col gap-2 items-center">
         <span class="text-quinary">
-          براتون تخفیف هتل گرفتیم
-          <span class="text-secondary">برید حال کنید</span>
+          تیم اجرایی برای رفاه هر چه بیشتر شما عزیزان با چندین هتل و اقامتگاه به
+          توافق رسیده است که لیست آنها
+          <span class="text-secondary">به شرح زیر می‌باشد.</span>
         </span>
       </div>
       <div
@@ -1001,27 +1056,128 @@
         <div
           class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
           <img
-            src="./public/images/bg-shiraz3.jpg"
+            src="./public/images/hotel/shahparion.jpg"
             class="w-full aspect-square rounded-md"
             alt="" />
-          <h6 class="font-bold text-2xl">هتل شاه پریون</h6>
-          <span class="font-bold text-lg"> امکانات :</span>
-          <ul class="pr-3 md:pr-1">
-            <li class="flex gap-3 items-center">
-              <i class="fa-solid fa-star text-amber-400"></i> ما خیلی امکانات
-              داریم
-            </li>
-          </ul>
+          <h6 class="font-bold text-2xl">هتل بوتیک شاه پریون</h6>
+          <span class="text-lg text-primary font-bold">
+            درصد تحفیف: <span class="text-secondary">۴۰٪</span>
+          </span>
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
+          <img
+            src="./public/images/hotel/shiraz.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="font-bold text-2xl">هتل شیراز</h6>
+
           <span class="text-lg text-primary font-bold"
-            >درصد تحفیف: <span class="text-secondary">۱۰۰٪</span></span
+            >درصد تحفیف: <span class="text-secondary">۱۰٪</span></span
           >
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
+          <img
+            src="./public/images/hotel/star.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="font-bold text-2xl">هتل ستارگان</h6>
+          <span class="text-lg text-primary font-bold"
+            >درصد تحفیف: <span class="text-secondary">۱۰٪</span></span
+          >
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
+          <img
+            src="./public/images/hotel/pers.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="font-bold text-2xl">هتل پرسپولیس</h6>
+          <span class="text-lg text-primary font-bold"
+            >درصد تحفیف:
+            <span class="text-secondary">۱۰۰ تومان زیر قیمت اسنپ</span></span
+          >
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
+          <img
+            src="./public/images/hotel/jamejam.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="font-bold text-2xl">هتل جام‌جم</h6>
+          <span class="text-lg text-primary font-bold"
+            >درصد تحفیف: <span class="text-secondary">۱۰٪</span></span
+          >
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full h-full flex flex-col p-5 md:p-2 justify-center gap-4 bg-white rounded-md shadow-2xl">
+          <img
+            src="./public/images/hotel/parsian.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="font-bold text-2xl">هتل پارسیان</h6>
+          <span class="text-lg text-primary font-bold"
+            >درصد تحفیف: <span class="text-secondary">۵٪</span></span
+          >
+          <div class="flex w-full justify-end items-center">
+            <a
+              href="tel:09121234567"
+              class="w-1/2 flex justify-center items-center gap-5 md:gap-3 py-2 bg-secondary rounded-md font-bold text-white text-lg">
+              <i class="fa-solid fa-phone"></i>
+              تماس
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <!-- start hotel section -->
 
     <!-- start team section -->
-    <section class="w-full p-page flex flex-col gap-5 items-center py-10">
+    <section
+      id="team"
+      class="w-full p-page flex flex-col gap-5 items-center py-10">
       <h2 class="text-primary font-bold text-3xl md:text-xl text-center">
         اعضای تیم اجرایی
       </h2>
@@ -1038,34 +1194,12 @@
             درخواست خود را از طریق لینک زیر برای ما ارسال کنید.
           </span>
         </span>
-        <a href="" class="text-blue-700 hover:underline"
-          >ارسال درخواست عضویت به تیم اجرایی</a
+        <a href="" class="text-blue-700 hover:underline formafzar"
+          ><script type="text/javascript" src="https://formafzar.com/pages/formbuilder/ravesh-formbuilder.js" form-url="https://formafzar.com/form/iqese" form-style="dialog" form-link-text="ارسال درخواست عضویت به تیم اجرایی" form-theme=""></script></a
         >
       </div>
       <div
         class="w-full grid grid-cols-4 gap-10 md:grid-cols-3 sm:!grid-cols-1">
-        <div
-          data-aos="fade-down"
-          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
-          <img
-            src="./public/images/team/farshad.jpg "
-            class="w-full aspect-square rounded-md"
-            alt="" />
-          <h6 class="text-2xl font-bold text-secondary">فرشاد فلاح</h6>
-          <span class="text-lg text-quinary"> مدیر تیم‌ اجرایی </span>
-        </div>
-        <div
-          data-aos="fade-down"
-          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
-          <img
-            src="./public/images/team/tabatabaii.jpg "
-            class="w-full aspect-square rounded-md"
-            alt="" />
-          <h6 class="text-2xl font-bold text-secondary">محمدحسین طباطبایی</h6>
-          <span class="text-lg text-quinary"
-            >دبیر انجمن ‌IT دانشگاه شیراز
-          </span>
-        </div>
         <div
           data-aos="fade-down"
           class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
@@ -1075,7 +1209,45 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">عباس داورپناه</h6>
           <span class="text-lg text-quinary"> برنامه‌ریز همایش </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/tabatabaii.jpg "
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">محمد طباطبایی</h6>
+          <span class="text-lg text-quinary"
+            >دبیر انجمن ‌IT دانشگاه شیراز
+          </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/farshad.jpg "
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">فرشاد فلاح</h6>
+          <span class="text-lg text-quinary"> مدیر تیم‌ اجرایی </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
         <div
           data-aos="fade-down"
           class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
@@ -1085,6 +1257,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">محمد اقبال</h6>
           <span class="text-lg text-quinary">مدیر تیم فنی همایش </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1095,6 +1272,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">علی شاکیان</h6>
           <span class="text-lg text-quinary">تیم فنی همایش </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1105,6 +1287,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">شروین احمدی</h6>
           <span class="text-lg text-quinary"> تیم فنی همایش </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1115,6 +1302,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">غنچه یاقار</h6>
           <span class="text-lg text-quinary">تیم فنی کارگاه تخصصی </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1125,6 +1317,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">امیرحسین قائمی</h6>
           <span class="text-lg text-quinary">تیم اجرایی - سالن اصلی </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1135,6 +1332,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">علی زرین‌کلاه</h6>
           <span class="text-lg text-quinary">تیم صحنه و تیم سالن </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1145,6 +1347,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">نگین شعاع حقیقی</h6>
           <span class="text-lg text-quinary">تیم عکاسی و تولید محتوا </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1155,6 +1362,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">امیرحسین حیدری</h6>
           <span class="text-lg text-quinary">تیم سالن - راهنما </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1165,6 +1377,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">پوریا شهبا</h6>
           <span class="text-lg text-quinary">مدیریت سالن </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1175,6 +1392,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">نرجس کشاورز</h6>
           <span class="text-lg text-quinary"> تولید محتوا - روابط عمومی </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1185,6 +1407,11 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">پوریا شعبانپور</h6>
           <span class="text-lg text-quinary"> تیم ورودی و تیم سالن </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
         <div
           data-aos="fade-down"
@@ -1195,6 +1422,237 @@
             alt="" />
           <h6 class="text-2xl font-bold text-secondary">پوریا حاجتی</h6>
           <span class="text-lg text-quinary">توسعه دهنده سایت </span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+
+        <!-- <div
+        data-aos="fade-down"
+        class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+        <img
+          src="./public/images/team/pouria-hajati.webp "
+          class="w-full aspect-square rounded-md"
+          alt="" />
+        <h6 class="text-2xl font-bold text-secondary">علی شهبازی</h6>
+        <span class="text-lg text-quinary">تولید محتوای ویدیوی</span>
+      </div> -->
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/mehdimir.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">مهدی میرمحمود</h6>
+          <span class="text-lg text-quinary">تیم سالن</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/mohsennz.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">محسن نظام الملکی</h6>
+          <span class="text-lg text-quinary">تیم فنی</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/sepehr.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">سپهر ذکاوت</h6>
+          <span class="text-lg text-quinary">مدیریت سالن</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/amirkhalili.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">امیر خلیلی</h6>
+          <span class="text-lg text-quinary">مدیریت سالن کارگاه</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/hosseines.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">حسین اسمائیلی‌نژاد</h6>
+          <span class="text-lg text-quinary">مدیریت سالن</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- <div
+    data-aos="fade-down"
+    class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+    <img
+      src="./public/images/team/"
+      class="w-full aspect-square rounded-md"
+      alt="" />
+    <h6 class="text-2xl font-bold text-secondary">الهام ریواز</h6>
+    <span class="text-lg text-quinary">پذیرایی</span>
+    </div> -->
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/mmdzare.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">محمد زارع</h6>
+          <span class="text-lg text-quinary">تولید محتوا</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/bitaq.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">بیتا غریب‌زاده</h6>
+          <span class="text-lg text-quinary">مدیریت صحنه</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/aryan.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">آرین رحیمی</h6>
+          <span class="text-lg text-quinary">ورودی ۲</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/sun.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">ساناز نادری</h6>
+          <span class="text-lg text-quinary">تولید محتوا</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/arya.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">آریا شهبازی</h6>
+          <span class="text-lg text-quinary">گرافیست</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/matin.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">متین حکیم‌الهی</h6>
+          <span class="text-lg text-quinary">مدیریت حمل و نقل</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/alighaderi.jpg "
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">علی قادری سهی</h6>
+          <span class="text-lg text-quinary">تولید محتوای ویدیویی</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <!-- <div
+    data-aos="fade-down"
+    class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+    <img
+      src="./public/images/team/"
+      class="w-full aspect-square rounded-md"
+      alt="" />
+    <h6 class="text-2xl font-bold text-secondary">پانیذ شعبان پور</h6>
+    <span class="text-lg text-quinary">مدیریت سالن</span>
+    </div> -->
+        <div
+          data-aos="fade-down"
+          class="w-full h-full bg-slate-100 border border-gray-300 rounded-lg p-5 flex flex-col gap-4 justify-center items-center">
+          <img
+            src="./public/images/team/salman.jpg"
+            class="w-full aspect-square rounded-md"
+            alt="" />
+          <h6 class="text-2xl font-bold text-secondary">سلمان بصیری</h6>
+          <span class="text-lg text-quinary">تولید محتوا</span>
+          <a
+            href=""
+            class="text-xl hover:text-secondary transition-all duration-200">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -1202,6 +1660,7 @@
 
     <!-- start location section -->
     <section
+      id="loacation"
       class="w-full flex flex-col gap-5 items-start justify-center py-10 min-h-[500px] bg-location bg-cover bg-top">
       <div class="w-fit h-1/2 bg-white flex py-10 px-20 md:px-6 flex-col gap-4">
         <h5 class="text-5xl font-semibold md:text-3xl">مکان برگزاری همایش</h5>
@@ -1235,6 +1694,14 @@
       </div>
     </section>
     <!-- end location section -->
+
+    <!-- start scroll to top icon -->
+    <div
+      id="scrollToTop"
+      class="size-16 hidden justify-center items-center text-white text-4xl p-2 bg-secondary rounded-full cursor-pointer fixed bottom-20 left-20 lg:left-5 lg:bottom-5 md:size-12 md:text-2xl z-30">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- start scroll to top icon -->
 
     <!-- start footer section -->
     <footer
@@ -1296,6 +1763,6 @@
     <script src="./public/assets/js/parallax.min.js"></script>
     <script src="./public/assets/js/aos.min.js"></script>
 
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
